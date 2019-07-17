@@ -151,7 +151,7 @@ this returned
 
 Copy this value and head to [https://gchq.github.io/CyberChef/](CyberChef). I entered the value of `binary` in the input pane. I chose the "from binary" operation. This produced the Base64 output. I then chose the "from Base64" operation and was given the flag in the output pane:
 
--screenshot-
+<img width="1158" alt="Screen Shot 2019-07-17 at 3 42 08 PM" src="https://user-images.githubusercontent.com/46615118/61410695-59711280-a8aa-11e9-98ad-5a08b766a4f5.png">
 
 That write up made it seem easy, but it was not... It took a long time for me to work through this problem.
 
