@@ -93,9 +93,7 @@ In `AESbootstrap.py` we read that
 
 ```python
 
-more code above
-
-...
+#more code above
 
 #******************************************************************************
 #test tool:
@@ -118,9 +116,7 @@ In the above comments it seems that we should be able to use this code in some w
 
 ```python
 
-more code above
-
-...
+#more code above
 
 #******************************************************************************
 #test tool:
