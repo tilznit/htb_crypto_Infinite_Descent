@@ -1,7 +1,7 @@
 # htb_crypto_Infinite_Descent
 Writeup for the Infinite Descent crypto challenge on hackthebox 
 
-Learn all about RSA [here](https://en.wikipedia.org/wiki/RSA_(cryptosystem)). Learn why it is hard to implement correctly [here](https://blog.trailofbits.com/2019/07/08/fuck-rsa/). This challenge reveals a neat attack against RSA when adjacent primes are chosen for _n_. This enables us to easliy factor _n_ and ultimately decrypt the message (read: flag). If RSA is implemented correctly _n_ should be super-difficult to factor.
+Learn all about RSA [here](https://en.wikipedia.org/wiki/RSA_(cryptosystem)). Learn why it is hard to implement correctly [here](https://blog.trailofbits.com/2019/07/08/fuck-rsa/). This challenge reveals a neat attack against RSA when adjacent primes are chosen for _n_. This enables us to easily factor _n_ and ultimately decrypt the message (read: flag). If RSA is implemented correctly _n_ should be super-difficult to factor.
 
 We are given three files:
 
