@@ -75,5 +75,14 @@ d = 1731323107921363963399218107501286134166022489779928017417243884137838489666
 ```
 As a side note: [https://www.boxentriq.com/code-breaking](https://www.boxentriq.com/code-breaking) and [https://www.dcode.fr/](https://www.dcode.fr/) are great online resources for solving crypto challenge math problems.
 
-We now have the private key _d_.
+We now have the private key _d_. You can use the following python to decrypt the ciphertext into message _m_.
+
+```python
+
+m = pow(c,d,n)
+
+>>>m
+500491164140527509149577108534901274218266116126419727365281831678182316L
+# strip the trailing L. The L signifies type = long in python prior to 3.0
+```
 
