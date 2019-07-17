@@ -130,7 +130,8 @@ def gen_and_check(genseed):
 
     return y #candidate for comparison.
 
-m = [500, 491, 164, 140, 527, 509, 149, 577, 108, 534, 901, 274, 218, 266, 116, 126, 419, 727, 365, 281, 831, 678, 182, 316] # (tilz) decrypted value returned after breaking RSA, split into a list of "triplets" of type int
+m = [500, 491, 164, 140, 527, 509, 149, 577, 108, 534, 901, 274, 218, 266, 116, 126, 419, 727, 365, 281, 831, 678, 182, 316]
+# (tilz) decrypted value returned after breaking RSA, split into a list of "triplets" of type int
 
 binary = '' # (tilz) nefariously added to help decrypt
 
