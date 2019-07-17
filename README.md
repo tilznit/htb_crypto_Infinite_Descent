@@ -1,7 +1,7 @@
 # htb_crypto_Infinite_Descent
 Writeup for the Infinite Descent crypto challenge on hackthebox 
 
-Learn all about RSA [here](https://en.wikipedia.org/wiki/RSA_(cryptosystem)). This challenge reveals a neat attack against RSA when adjacent primes are chosen for _n_. This enables us to ultimately decrypt the message (read: flag).
+Learn all about RSA [here](https://en.wikipedia.org/wiki/RSA_(cryptosystem)). Learn why we should not use it [here](https://blog.trailofbits.com/2019/07/08/fuck-rsa/). This challenge reveals a neat attack against RSA when adjacent primes are chosen for _n_. This enables us to ultimately decrypt the message (read: flag).
 
 We are given three files:
 
@@ -61,14 +61,14 @@ p = 7805622068551395034983074294227914827932592556281432557101799867160043121996
 
 q = 7805622068551395034983074294227914827932592556281432557101799867160043121996329164791493852142033952331091204125384233936237118904494182099698709037828129
 ```
-notice that the difference _q_ and _p_ is only 6. This seems to be ... [bad](https://rjlipton.wordpress.com/2012/03/01/do-gaps-between-primes-affect-rsa-keys/).
+notice that the difference _q_ and _p_ is only 6. This seems to be ... [bad](https://blog.trailofbits.com/2019/07/08/fuck-rsa/).
 
 We can calulate the least common multiple at [https://www.dcode.fr/lcm]https://www.dcode.fr/lcm(https://www.dcode.fr/lcm).
 
 ```python
 λ(n) = 30463867938528279565401534959810929864908611908045734435234364075267551172542772097500571089748873650378488059179995765883052060689502073164988366040214053330480892504655001760741281894233843642484498626288783558355693907322873644811819784752614385907236320954718182951346011940023270373505727106108520507808
 ```
-Because of math, _d_ is the modular multiplicative inverse of `e (mod λ(n))`. This was can be calculated at [https://www.boxentriq.com/code-breaking/modular-multiplicative-inverse](https://www.boxentriq.com/code-breaking/modular-multiplicative-inverse).
+Because of math, _d_ is the modular multiplicative inverse of `e (mod λ(n))`. This can be calculated at [https://www.boxentriq.com/code-breaking/modular-multiplicative-inverse](https://www.boxentriq.com/code-breaking/modular-multiplicative-inverse).
 
 ```python
 d = 17313231079213639633992181075012861341660224897799280174172438841378384896661856501571726975735638616079423321974123354686362772974673760121811445161264821861652064058903828304325339662063166460289266152474968833094529430278281761061095864975447082068158811210147450176325336233243919134711602786122617068737
