@@ -114,7 +114,7 @@ candidate = list[2::]
 candidate = candidate.zfill(8)
 ```
 
-In the above comments it seems that we should be able to use this code in some way to get what we need, which is binary output. I think this may be a technique called [https://en.wikipedia.org/wiki/Key_Wrap](Key Wrapping), but honestly I am not sure. After much pain, trial, and error I came up with the below. My comments are prepended with `(tilz)`.
+In the above comments it seems that we should be able to use this code in some way to get what we need, which is binary output. I think this may be a technique called [Key Wrapping](https://en.wikipedia.org/wiki/Key_Wrap), but honestly I am not sure. After much pain, trial, and error I came up with the below. My comments are prepended with `(tilz)`.
 
 ```python
 
@@ -152,12 +152,12 @@ this returned
 10110100110110101111000011010000101101001111010001100010100001101100011011011010011100101110010010011010011001000110101011001100101001001111010010100100111010001011010010100010011110100111101
 ```
 
-Copy this value and head to [https://gchq.github.io/CyberChef/](CyberChef). I entered the value of `binary` in the input pane. I chose the "from binary" operation. This produced the Base64 output. I then chose the "from Base64" operation and was given the flag in the output pane:
+Copy this value and head to [Cyberchef](https://gchq.github.io/CyberChef/). I entered the value of `binary` in the input pane. I chose the "from binary" operation. This produced the Base64 output. I then chose the "from Base64" operation and was given the flag in the output pane:
 
 <img width="1158" alt="Screen Shot 2019-07-17 at 3 42 08 PM" src="https://user-images.githubusercontent.com/46615118/61410695-59711280-a8aa-11e9-98ad-5a08b766a4f5.png">
 
-That write up made it seem easy, but it was not... It took a long time for me to work through this problem.
+That write up made it seem easy, but it was not... It took a long time for me to understand and work through this problem. I learned a lot.
 
-~fin
+~fin!
 
 
