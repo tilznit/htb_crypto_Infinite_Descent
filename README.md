@@ -82,7 +82,7 @@ We now have the private key _d_. You can use the following python to decrypt the
 
 ```python
 
-m = pow(c,d,n) # c^d mod n
+m = pow(c,d,n) # (c^d)%n
 
 >>>m
 500491164140527509149577108534901274218266116126419727365281831678182316L
